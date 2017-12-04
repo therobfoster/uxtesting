@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>x</title>
+  <meta charset="utf-8">
+  <meta content="x" name="description">
+  <meta content="x" name="author">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <link href="css/screen.css" media="screen, projection" rel="stylesheet">
+  <link href="images/favicon.png" rel="shortcut icon" type="image/ico">
+  <meta content="telephone=no" name="format-detection">
+  <script src="js/addremove.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,300" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="init()">
+  <div class="LEFT">
+    <textarea placeholder="Type here"></textarea>
+  </div>
+  <div class="RIGHT">
+    <div class="RULE">
+      <div class="WHEN">
+        <p>
+          When
+        </p>
+        <div class="SELECT">
+          <select>
+            <option>
+              any of the following
+            </option>
+            <option>
+              all of the following
+            </option>
+          </select>
+        </div>
+        <div class="SELECT">
+          <select>
+            <option>
+              is true
+            </option>
+            <option>
+              is not true
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="CONDITIONS" id="conditions">
+        <div class="CONDITION">
+          <a href="#x" class="REMOVE">Remove</a>
+          <input placeholder="attribute">
+          <div class="SELECT">
+            <select>
+              <option>
+                is
+              </option>
+              <option>
+                is not
+              </option>
+            </select>
+          </div>
+          <input placeholder="value">
+          <a class="ADD" id="add" onclick="addRow()">Add Item</a>
+        </div>
+      </div>
+      <div class="THEN">
+        <p>
+          Then
+        </p>
+      </div>
+      <div class="RESULTS" id="results">
+        <div class="RESULT">
+          <a href="#x" class="REMOVE">Remove</a>
+          <input placeholder="attribute">
+          <div class="SELECT">
+            <select>
+              <option>
+                is
+              </option>
+              <option>
+                is not
+              </option>
+            </select>
+          </div>
+          <input placeholder="value">
+          <a href="#x" class="ADD" id="add">Add Item</a>
+        </div>
+      </div>
+    </div>
+    <a href="#x" class="NEWRULE" id="newrule">Add New Rule</a>
+  </div>
+</body>
+
+</html>
